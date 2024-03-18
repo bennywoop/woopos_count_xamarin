@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:p1="http://schemas.android.com/apk/res/android"
+    p1:orientation="vertical"
+    p1:layout_width="match_parent"
+    p1:layout_height="match_parent"
+    p1:id="@+id/linearLayout1">
+    <TextView
+        p1:text="Are you sure to clear the scan list? If yes, type the word DELETEALL to confirm:"
+        p1:textAppearance="?android:attr/textAppearanceMedium"
+        p1:layout_width="match_parent"
+        p1:layout_height="160dp"
+        p1:textSize="26sp"
+        p1:id="@+id/confirmbox_lblConfirm" />
+    <EditText
+        p1:id="@+id/confirmbox_txtConfirm"
+        p1:layout_width="match_parent"
+        p1:layout_height="50.0dp"
+        p1:textSize="26sp"
+        p1:textStyle="bold"
+        p1:hint="type here"
+        p1:singleLine="true" />
+    <LinearLayout
+        p1:orientation="horizontal"
+        p1:layout_width="match_parent"
+        p1:layout_height="55.5dp"
+        p1:id="@+id/linearLayout2">
+        <Button
+            p1:text="Cancel"
+            p1:layout_width="wrap_content"
+            p1:layout_height="match_parent"
+            p1:layout_weight="1"
+            p1:id="@+id/confirmbox_btnCancel" />
+        <Button
+            p1:text="OK"
+            p1:layout_width="wrap_content"
+            p1:layout_height="match_parent"
+            p1:layout_weight="1"
+            p1:id="@+id/confirmbox_btnOK" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayoutList"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:focusableInTouchMode="true">
+    <LinearLayout
+        android:id="@+id/LinearLayoutInput"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+		android:background="#555555"      
+        android:minHeight="60sp">
+        <EditText
+            android:id="@+id/txtCode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:textSize="26sp"
+            android:textStyle="bold"
+		  	android:textColor="#EFEFEF"
+		android:hint="Scan or type code"
+            android:singleLine="true" />
+        <ImageButton
+            android:id="@+id/imageButtonAdd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:padding="0dp"
+            android:scaleType="fitCenter"
+     		android:background="#555555"      
+  	        android:src="@drawable/ic_content_inbox" />
+        <ImageButton
+            android:id="@+id/imageButtonCamera"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:padding="0dp"
+            android:scaleType="fitCenter"
+      		android:background="#555555"      
+  	        android:src="@drawable/ic_image_camera_alt" />
+    </LinearLayout>
+<!-- stretching frame layout, using layout_weight -->
+    <FrameLayout
+     	android:background="#222"      
+		android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1">
+        <ListView
+            android:minWidth="30px"
+            android:minHeight="30px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/listView1" />
+    </FrameLayout>  
+<!-- content fixated to the bottom of the screen -->
+    <LinearLayout
+  	  	android:background="#222"      
+  		android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/ltvTotal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="9"
+            android:textStyle="bold"
+            android:minHeight="45sp"
+            android:gravity="center"
+        	android:textColor="#FFFF"
+	   		android:background="#222"      
+  			android:textSize="25sp" />
+        <ImageButton
+            android:id="@+id/imageButtonCamera2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:padding="0dp"
+            android:scaleType="fitCenter"
+      		android:background="#222"      
+  			android:src="@drawable/ic_image_camera_alt" />
+    </LinearLayout>
+</LinearLayout>

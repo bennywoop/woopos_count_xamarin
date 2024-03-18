@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ListItemRow"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="25sp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/Title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:textSize="25sp"
+            android:textStyle="bold"
+       		android:textColor="#FFFF"
+			android:typeface="sans" />
+        <TextView
+            android:id="@+id/lblQty"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:gravity="right"
+            android:textSize="25sp"
+            android:textStyle="bold"
+       		android:textColor="#FFFF"
+		     android:typeface="sans" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:textSize="25sp"
+            android:textStyle="bold"
+    		android:textColor="#FFFF"
+			android:typeface="sans" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/Description"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+  		android:textColor="#FFFF"
+		android:textSize="16sp" />
+    <TextView
+        android:id="@+id/Price"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+  		android:textColor="#FFFF"
+		android:textSize="16sp" />
+    <LinearLayout
+        android:id="@+id/qtyButtons"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="50dp"
+    	android:textColor="#FFFF"
+		android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnMinus"
+            android:text="-"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="#5F3adb15"
+            android:layout_weight="1"
+            android:textSize="30sp"
+            android:textStyle="bold"
+     		android:textColor="#FFFF"
+		    android:typeface="sans" />
+        <EditText
+            android:id="@+id/txtQty"
+            android:inputType="numberDecimal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:textSize="30sp"
+            android:gravity="center"
+      		android:textColor="#FFFF"
+		    android:hint="Quantity" />
+        <Button
+            android:id="@+id/btnPlus"
+            android:text="+"
+            android:layout_width="0dp"
+            android:background="#5F3adb15"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="30sp"
+            android:textStyle="bold"
+        	android:textColor="#FFFF"
+		    android:typeface="sans" />
+        <Button
+            android:id="@+id/btnDelete"
+            android:text="X"
+            android:background="#5Fdb1533"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="30sp"
+            android:textStyle="bold"
+    		android:textColor="#FFFF"
+		    android:typeface="sans" />
+    </LinearLayout>
+</LinearLayout>
